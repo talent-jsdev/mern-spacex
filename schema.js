@@ -13,6 +13,7 @@ const {
 const LaunchType = new GraphQLObjectType({
   name: "Launch",
   fields: () => ({
+    id: { type: GraphQLString },
     flight_number: { type: GraphQLInt },
     name: { type: GraphQLString },
     date_local: { type: GraphQLString },
